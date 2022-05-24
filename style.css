@@ -82,127 +82,9 @@ body {
 
 /* Designing of knapperne */
 
-.dots {
-    display: inline-block;
-    margin-top: 70px;
-    margin-left: 20px;
-    margin-right: 10px;
-    text-align: center
-}
-
-/* 1 Get started */
-.dot1 {
-    height: 37px;
-    width: 37px;
-    background-color: #c52b37;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 3px;
-}
-
-.dot1 img {
-    width: 55%;
-    margin: 8.5px;
-}
-
-/* 2 Om dig */
-.dot2 {
-    height: 37px;
-    width: 37px;
-    background-color: #dfdad8;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 3px;
-    text-decoration: line-through;
-}
-
-.dot2 img {
-    width: 55%;
-    margin: 8.5px;
-}
-
-/* 3 Holdet */
-.dot3 {
-    height: 37px;
-    width: 37px;
-    background-color: #dfdad8;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 3px;
-    text-decoration: line-through;
-}
-
-.dot3 img {
-    width: 80%;
-    margin-left: 4px;
-    margin-top: 6px;
-}
-
-/* 4 Lokalitet */
-.dot4 {
-    height: 37px;
-    width: 37px;
-    background-color: #dfdad8;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 3px;
-    text-decoration: line-through;
-}
-
-.dot4 img {
-    width: 55%;
-    margin: 8px;
-    margin-bottom: 5px;
-}
-
-/* 5 Aktiviteter */
-.dot5 {
-    height: 37px;
-    width: 37px;
-    background-color: #dfdad8;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 3px;
-    text-decoration: line-through;
-}
-
-.dot5 img {
-    width: 55%;
-    margin: 8.5px;
-}
-
-/* 2 Behov */
-.dot6 {
-    height: 37px;
-    width: 37px;
-    background-color: #dfdad8;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 3px;
-    text-decoration: line-through;
-}
-
-.dot6 img {
-    width: 55%;
-    margin: 8.5px;
-}
 
 
-/* 7 Done */
-.dot7 {
-    height: 37px;
-    width: 37px;
-    background-color: #dfdad8;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 3px;
-    text-decoration: line-through;
-}
 
-.dot7 img {
-    width: 55%;
-    margin: 8.5px;
-}
 
 
 /* Designing of linjen igennem */
@@ -222,15 +104,6 @@ body {
 .getstarted h1 {
     font-size: 20px;
 }
-
-
-
-
-
-
-
-
-
 
 
 
