@@ -15,11 +15,13 @@
         <!-- HEADER -->
         <section class="header">
             <div class="logo">
+              
+                <!-- LOGO -->
+                <img src="images/Logo.svg" alt="logo">
 
-                <img src="images/logo.png" alt="logo">
-
+                <!-- BURGERMENU -->
                 <div" class="rightheader">
-                    <img src="images/Burgermenu.png" alt="Burgermenu">
+                    <img src="images/Burgermenu.svg" alt="Burgermenu">
     
                      <!-- Reference: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_searchbar -->
             </div>
@@ -51,8 +53,11 @@
             
         <form id="regForm" action="/action_page.php">
         
-        <!-- Circles which indicates the steps of the form: -->
+
+        <!-- CIRKLER SOM INDIKERER DE FORSKELLIGE STEPS: -->
         <div style="text-align:center;margin-top:40px;">
+            <span class="step"></span>  
+            <span class="step"></span>
             <span class="step"></span>
             <span class="step"></span>
             <span class="step"></span>
@@ -61,32 +66,58 @@
         </div>
         
 
+        <!-- SLIDE 1: GET STARTED -->
+            <section class="getstarted">
+                
 
-        <h1>Register:</h1>
-        
-        <!-- One "tab" for each step in the form: -->
-        <div class="tab">Name:
-            <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
-            <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
-        </div>
-              <div class="tab">Contact Info:
-                <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
-                <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
-              </div>
+                <div class="tab">
+                      <div class="text1">
+                        <h1> Velkommen: Find din Specialsport </h1> 
+                        <p> Hej du! </p> 
+                        <p> Velkommen til FindSpecialsport. </p> 
+                        <p> Er du i tvivl om hvilken sport der passer til dig og dine behov? </p> 
+                        <p> Så er du kommet til det rette sted – Tag testen her </p> 
+                    </div>
+
+                  <button type="button" id="nextBtn" onclick="nextPrev(1)" style="padding: 10px 110px; border-radius: 5px;"></button>
+                
+                    <div class="image1">
+                      <img src="images/Icon1.svg" alt="Icon">
+                    </div>
+                
+                </div>
+            </section> 
+
+
+        <!-- SLIDE 2: OM DIG -->
+            <section class="aboutyou">
+              <div class="tab">
+                <div class="text2">
+                  <h1> Om dig </h1> 
+                  <p> Markér den målgruppe, som passer bedst til dig, og de ting som gør dig speciel! </p> 
+                  <h2> Målgruppe </h2> 
+                  <h2> Magtesløshed </h2> 
+                </div>
+
+                  <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
+                  <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
+                
+                      <div style="float:right;">
+                        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Forrige</button>
+                        <button type="button" id="nextBtn" onclick="nextPrev(1)">Næste</button>
+                      </div>
+                  </div>
+            </section>
+
               <div class="tab">Birthday:
                 <p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
                 <p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
                 <p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p>
               </div>
+
               <div class="tab">Login Info:
                 <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
                 <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
-              </div>
-              <div style="overflow:auto;">
-                <div style="float:right;">
-                  <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-                  <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-                </div>
               </div>
               
             </form>
@@ -94,16 +125,7 @@
 
 
 
-            <!-- SLIDE 1: GET STARTED -->
-            <section class="getstarted">
-                <div>
-                    <h1> Step by step </h1> 
-                    <h2> Step by step </h2> 
-
-                    <p> Find din Specialsport: </p> 
-                    
-                </div>
-            </section> 
+            
             
         </section>
 
@@ -111,27 +133,10 @@
 
 
         <style>
-            * {
-              box-sizing: border-box;
-            }
             
-            body {
-              background-color: #f1f1f1;
-            }
             
-            #regForm {
-              background-color: #ffffff;
-              margin: 100px auto;
-              font-family: Raleway;
-              padding: 40px;
-              width: 70%;
-              min-width: 300px;
-            }
-            
-            h1 {
-              text-align: center;  
-              margin-top: 50px;
-            }
+          
+           
             
             input {
               padding: 10px;
@@ -147,57 +152,12 @@
             }
             
             /* Hide all steps by default: */
-            .tab {
-              display: none;
-            }
             
-            button {
-              background-color: #04AA6D;
-              color: #ffffff;
-              border: none;
-              padding: 10px 20px;
-              font-size: 17px;
-              font-family: Raleway;
-              cursor: pointer;
-            }
             
-            button:hover {
-              opacity: 0.8;
-            }
             
-            #prevBtn {
-              background-color: #bbbbbb;
-            }
             
             /* Make circles that indicate the steps of the form: */
-            .step {
-              height: 35px;
-              width: 35px;
-              background-color: #c4bbb7;
-              border: none;  
-              border-radius: 50%;
-              display: inline-block;
-              opacity: 0.5;
-              margin-top: -300px;
-              margin-right: 5px;
-            }
             
-            .step.active {
-              opacity: 1;
-              background-color: #c52b37;
-            }
-            
-            /* Mark the steps that are finished and valid: */
-            .step.finish {
-              background-color: #c52b37;
-              opacity: 1;
-            }
-
-            .step img {
-                width: 60%;
-                margin-top: 20%;
-                margin-bottom: 20%;
-            }
 
 
 
