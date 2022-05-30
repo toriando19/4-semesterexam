@@ -96,29 +96,86 @@
                   <h1> Om dig </h1> 
                   <p> Markér den målgruppe, som passer bedst til dig, og de ting som gør dig speciel! </p> 
                   <h2> Målgruppe </h2> 
-                  <h2> Magtesløshed </h2> 
                 </div>
+                  <!-- Afkrydsningsfelter i step-by-step-guiden --> 
+                  <!-- Kopieret direkte fra linket: https://stackoverflow.com/questions/44299150/set-text-inside-a-check-box --> 
+                  <div class="checkboxstyle">
+                    <ul>
+                      <li>
+                        <input type="checkbox" id="check_1" name="check_1" value="check_1">
+                        <label for="check_1">Børnehavebarn</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="check_2" name="check_2" value="check_2">
+                        <label for="check_2">Barn</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="check_3" name="check_3" value="check_3">
+                        <label for="check_3">Teenager</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="check_4" name="check_4" value="check_4">
+                        <label for="check_4">Voksen</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="check_5" name="check_5" value="check_5">
+                        <label for="check_5">Kørestol</label>
+                      </li>
+                    </ul>
+                  </div>  
 
-                  <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
-                  <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
-                
+                  <div class="text2">
+                    <h2> Magtesløshed </h2> 
+                  </div>
+                    <div class="checkboxstyle2">
+                      <ul>
+                        <li>
+                          <input type="checkbox" id="check_1" name="check_1" value="check_1">
+                          <label for="check_1">Intellektuel</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="check_2" name="check_2" value="check_2">
+                          <label for="check_2">Autisme</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="check_3" name="check_3" value="check_3">
+                          <label for="check_3">Adskillige typer</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="check_4" name="check_4" value="check_4">
+                          <label for="check_4">Visuelt</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="check_5" name="check_5" value="check_5">
+                          <label for="check_5">ADHD</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="check_6" name="check_6" value="check_6">
+                          <label for="check_6">Kørestol brugere </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="check_7" name="check_7" value="check_7">
+                          <label for="check_7">Auditiv</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="check_8" name="check_8" value="check_8">
+                          <label for="check_8">Fysisk</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="check_9" name="check_9" value="check_9">
+                          <label for="check_9">Andet</label>
+                        </li>
+                      </ul>
+                    </div>  
+
                       <div style="float:right;">
                         <button type="button" id="prevBtn" onclick="nextPrev(-1)">Forrige</button>
                         <button type="button" id="nextBtn" onclick="nextPrev(1)">Næste</button>
-                      </div>
-                  </div>
+                    </div>
+              </div>
             </section>
 
-              <div class="tab">Birthday:
-                <p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
-                <p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
-                <p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p>
-              </div>
-
-              <div class="tab">Login Info:
-                <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
-                <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
-              </div>
+              
               
             </form>
 

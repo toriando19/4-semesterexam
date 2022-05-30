@@ -160,6 +160,59 @@ input {
 
 
 
+/* Styling af afkrydsningsfelter i guiden */
+/* Kopieret direkte fra linket: https://stackoverflow.com/questions/44299150/set-text-inside-a-check-box */
+
+  ul {
+    padding: 0;
+    margin: 0;
+    clear: both;
+  }
+
+  .checkboxstyle {
+      margin-bottom: 130px;
+  }
+
+  .checkboxstyle2 {
+    margin-bottom: 230px;
+}
+  
+  li{
+    list-style-type: none;
+    list-style-position: outside;
+    padding: 10px;
+    margin-left: -10px;
+    margin-bottom: -20px;
+    float: left;
+  }
+  
+  input[type="checkbox"]:not(:checked), 
+  input[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999%;
+  }
+  
+  input[type="checkbox"] + label {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.378);
+    font-size: 12px;
+    background-color: #c4bbb7;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="checkbox"]:checked + label {
+    color: white;
+    font-size: 12px;
+    background-color: #c52b37;
+    border-radius: 5px;
+  }
+
+  
+
+
 /* Egen kode */
 
 /* Slide 1: Get started */
@@ -202,18 +255,23 @@ input {
 
 .aboutyou p {
     font-size: 12px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .aboutyou h2 {
     font-size: 14px;
     color: #000000;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
-.text1 {
-    margin-bottom: 30px;
+.text2 {
+    margin-bottom: 2px;
 }
+
+.text22 {
+    margin-top: 3px;
+}
+
 
 
 
